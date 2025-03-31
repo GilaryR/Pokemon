@@ -6,21 +6,19 @@ package autonoma.Pokemon.models;
  * @since 2025/03/31
  * @version 1.0
  */
-public class Charmander extends Pokemon implements PokemonFuego {
-    public Charmander() {
-        super(4, "Charmander", 8.5, 1);
+public class Charmander implements Pokemon, PokemonFuego {
+    @Override
+    public void atacar() {
+        System.out.println("Charmander usa Lanzallamas!");
     }
-    
-    public void atacarPunioFuego() {
-        System.out.println(nombre + " usa Puño Fuego!");
+
+    @Override
+    public void defender() {
+        System.out.println("Charmander se protege con su cola de fuego.");
     }
-    
-    public void atacarAscuas() {
-        System.out.println(nombre + " usa Ascuas!");
-    }
-    
+
+    @Override
     public void atacarLanzallamas() {
-        System.out.println(nombre + " usa Lanzallamas!");
+        System.out.println("Charmander escupe fuego ardiente!");
     }
 }
-

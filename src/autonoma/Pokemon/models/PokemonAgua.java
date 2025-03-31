@@ -8,8 +8,4 @@ package autonoma.Pokemon.models;
  */
 public interface PokemonAgua {
     void atacarHidrobomba();
-    void atacarPistolaAgua();
-    void atacarBurbuja();
-    void atacarHidropulso();
 }
-

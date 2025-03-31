@@ -6,24 +6,19 @@ package autonoma.Pokemon.models;
  * @since 2025/03/31
  * @version 1.0
  */
-public class Bulbasaur extends Pokemon implements PokemonPlanta {
-    public Bulbasaur() {
-        super(1, "Bulbasaur", 6.9, 1);
+public class Bulbasaur implements Pokemon, PokemonPlanta {
+    @Override
+    public void atacar() {
+        System.out.println("Bulbasaur usa Latigazo Cepa!");
     }
-    
-    public void atacarParalizar() {
-        System.out.println(nombre + " usa Paralizar!");
+
+    @Override
+    public void defender() {
+        System.out.println("Bulbasaur se protege con sus hojas.");
     }
-    
-    public void atacarDrenaje() {
-        System.out.println(nombre + " usa Drenaje!");
-    }
-    
+
+    @Override
     public void atacarHojaAfilada() {
-        System.out.println(nombre + " usa Hoja Afilada!");
-    }
-    
-    public void atacarLatigoCepa() {
-        System.out.println(nombre + " usa Látigo Cepa!");
+        System.out.println("Bulbasaur lanza hojas cortantes!");
     }
 }

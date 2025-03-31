@@ -6,25 +6,22 @@ package autonoma.Pokemon.models;
  * @since 2025/03/31
  * @version 1.0
  */
-public class Pikachu extends Pokemon implements PokemonElectrico {
-    public Pikachu() {
-        super(25, "Pikachu", 6.0, 1);
+
+public class Pikachu implements Pokemon, PokemonElectrico {
+    @Override
+    public void atacar() {
+        System.out.println("Pikachu usa Impactrueno!");
     }
-    
+
+    @Override
+    public void defender() {
+        System.out.println("Pikachu se protege con un campo eléctrico.");
+    }
+
+    @Override
     public void atacarImpactrueno() {
-        System.out.println(nombre + " usa Impactrueno!");
-    }
-    
-    public void atacarPunioTrueno() {
-        System.out.println(nombre + " usa Puño Trueno!");
-    }
-    
-    public void atacarRayo() {
-        System.out.println(nombre + " usa Rayo!");
-    }
-    
-    public void atacarRayoCarga() {
-        System.out.println(nombre + " usa Rayo Carga!");
+        System.out.println("Pikachu lanza un rayo eléctrico!");
     }
 }
+
 
