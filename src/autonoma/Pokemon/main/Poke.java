@@ -19,26 +19,24 @@ public class Poke {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Pokemon pikachu = new Pikachu();
-        Pokemon charmander = new Charmander();
-        Pokemon squirtle = new Squirtle();
-        Pokemon bulbasaur = new Bulbasaur();
+       
+        // Crear instancias de los Pokémon
+        Bulbasaur bulbasaur = new Bulbasaur(1, "Bulbasaur", 6.9, "Primera");
+        Pikachu pikachu = new Pikachu(25, "Pikachu", 6.0, "Primera");
+        Charmander charmander = new Charmander(4, "Charmander", 8.5, "Primera");
+        Squirtle squirtle = new Squirtle(7, "Squirtle", 9.0, "Primera");
 
-        pikachu.atacar();
-        pikachu.defender();
-        ((Pikachu) pikachu).atacarImpactrueno();
+        // Mostrar los ataques de cada Pokémon
+        System.out.println(bulbasaur.atacarPlacaje());
+        System.out.println(bulbasaur.atacarLatigoCepa());
 
-        charmander.atacar();
-        charmander.defender();
-        ((Charmander) charmander).atacarLanzallamas();
+        System.out.println(pikachu.atacarImpactrueno());
+        System.out.println(pikachu.atacarRayo());
 
-        squirtle.atacar();
-        squirtle.defender();
-        ((Squirtle) squirtle).atacarHidrobomba();
+        System.out.println(charmander.atacarAscuas());
+        System.out.println(charmander.atacarLanzaLlamas());
 
-        bulbasaur.atacar();
-        bulbasaur.defender();
-        ((Bulbasaur) bulbasaur).atacarHojaAfilada();
+        System.out.println(squirtle.atacarPistolaAgua());
+        System.out.println(squirtle.atacarHidropulso());
     }
 }
-    

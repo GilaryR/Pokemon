@@ -7,21 +7,38 @@ package autonoma.Pokemon.models;
  * @version 1.0
  */
 
-public class Pikachu implements Pokemon, PokemonElectrico {
-    @Override
-    public void atacar() {
-        System.out.println("Pikachu usa Impactrueno!");
+public class Pikachu extends Pokemon implements PokemonElectrico {
+    public Pikachu(int numPokedex, String nombre, double peso, String temporada) {
+        super(numPokedex, nombre, peso, temporada);
     }
 
     @Override
-    public void defender() {
-        System.out.println("Pikachu se protege con un campo eléctrico.");
-    }
+    public String atacarPlacaje() { 
+        return nombre + " usó Placaje!"; }
 
     @Override
-    public void atacarImpactrueno() {
-        System.out.println("Pikachu lanza un rayo eléctrico!");
-    }
+    public String atacarArañazo() { 
+        return nombre + " usó Arañazo!"; }
+
+    @Override
+    public String atacarMordisco() { 
+        return nombre + " usó Mordisco!"; }
+
+   
+    @Override
+    public String atacarImpactrueno() { 
+        return nombre + " usó Impactrueno!"; }
+
+    @Override
+    public String atacarPuñoTrueno() { 
+        return nombre + " usó Puño Trueno!"; }
+
+    @Override
+    public String atacarRayo() { 
+        return nombre + " usó Rayo!"; }
+
+    @Override
+    public String atacarRayoCarga() { 
+        return nombre + " usó Rayo Carga!"; }
 }
-
 
