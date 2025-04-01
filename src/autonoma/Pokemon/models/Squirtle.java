@@ -1,44 +1,33 @@
 package autonoma.Pokemon.models;
 
-
-class Squirtle extends Pokemon implements PokemonAgua {
-    public Squirtle() {
-        super(7, "Squirtle", 9.0, "Primera temporada");
+/**
+ * @author Alejandra
+ * @since 2025/03/31
+ * @version 1.0
+ */
+public class Squirtle extends Pokemon implements PokemonAgua {
+    public Squirtle(int numPokedex, String nombre, double peso, String temporada) {
+        super(numPokedex, nombre, peso, temporada);
     }
 
     @Override
-    public void atacarPlacaje() {
-        System.out.println("Squirtle usa Placaje!");
-    }
+    public String atacarPlacaje() { return nombre + " usó Placaje!"; }
 
     @Override
-    public void atacarAranazo() {
-        System.out.println("Squirtle usa Arañazo!");
-    }
+    public String atacarArañazo() { return nombre + " usó Arañazo!"; }
 
     @Override
-    public void atacarMordisco() {
-        System.out.println("Squirtle usa Mordisco!");
-    }
+    public String atacarMordisco() { return nombre + " usó Mordisco!"; }
 
     @Override
-    public void atacarHidroBomba() {
-        System.out.println("Squirtle usa Hidro Bomba!");
-    }
+    public String atacarHidroBomba() { return nombre + " usó Hidro Bomba!"; }
 
     @Override
-    public void atacarPistolaAgua() {
-        System.out.println("Squirtle usa Pistola Agua!");
-    }
+    public String atacarPistolaAgua() { return nombre + " usó Pistola Agua!"; }
 
     @Override
-    public void atacarBurbuja() {
-        System.out.println("Squirtle usa Burbuja!");
-    }
+    public String atacarBurbuja() { return nombre + " usó Burbuja!"; }
 
     @Override
-    public void atacarHidropulso() {
-        System.out.println("Squirtle usa Hidropulso!");
-    }
+    public String atacarHidropulso() { return nombre + " usó Hidropulso!"; }
 }
-

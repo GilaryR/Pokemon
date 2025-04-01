@@ -6,38 +6,26 @@ package autonoma.Pokemon.models;
  * @since 2025/03/31
  * @version 1.0
  */
-class Charmander extends Pokemon implements PokemonFuego {
-    public Charmander() {
-        super(4, "Charmander", 8.5, "Primera temporada");
+public class Charmander extends Pokemon implements PokemonFuego {
+    public Charmander(int numPokedex, String nombre, double peso, String temporada) {
+        super(numPokedex, nombre, peso, temporada);
     }
 
     @Override
-    public void atacarPlacaje() {
-        System.out.println("Charmander usa Placaje!");
-    }
+    public String atacarPlacaje() { return nombre + " usó Placaje!"; }
 
     @Override
-    public void atacarAranazo() {
-        System.out.println("Charmander usa Arañazo!");
-    }
+    public String atacarArañazo() { return nombre + " usó Arañazo!"; }
 
     @Override
-    public void atacarMordisco() {
-        System.out.println("Charmander usa Mordisco!");
-    }
+    public String atacarMordisco() { return nombre + " usó Mordisco!"; }
 
     @Override
-    public void atacarPunioFuego() {
-        System.out.println("Charmander usa Puño Fuego!");
-    }
+    public String atacarPuñoFuego() { return nombre + " usó Puño Fuego!"; }
 
     @Override
-    public void atacarAscuas() {
-        System.out.println("Charmander usa Ascuas!");
-    }
+    public String atacarAscuas() { return nombre + " usó Ascuas!"; }
 
     @Override
-    public void atacarLanzaLlamas() {
-        System.out.println("Charmander usa Lanza Llamas!");
-    }
+    public String atacarLanzaLlamas() { return nombre + " usó Lanza Llamas!"; }
 }
