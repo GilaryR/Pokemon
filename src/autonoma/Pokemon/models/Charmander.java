@@ -12,20 +12,32 @@ public class Charmander extends Pokemon implements PokemonFuego {
     }
 
     @Override
-    public String atacarPlacaje() { return nombre + " usó Placaje!"; }
+    public String atacarPlacaje() { 
+        return nombre + " uso Placaje!";
+    }
 
     @Override
-    public String atacarArañazo() { return nombre + " usó Arañazo!"; }
+    public String atacarArañazo() { 
+        return nombre + " uso Arañazo!"; 
+    }
 
     @Override
-    public String atacarMordisco() { return nombre + " usó Mordisco!"; }
+    public String atacarMordisco() { 
+        return nombre + " uso Mordisco!"; 
+    }
+  
+    @Override
+    public String atacarPunioFuego() { 
+        return nombre + " uso Puño Fuego!"; 
+    }
 
     @Override
-    public String atacarPuñoFuego() { return nombre + " usó Puño Fuego!"; }
+    public String atacarAscuas() { 
+        return nombre + " uso Ascuas!"; 
+    }
 
     @Override
-    public String atacarAscuas() { return nombre + " usó Ascuas!"; }
-
-    @Override
-    public String atacarLanzaLlamas() { return nombre + " usó Lanza Llamas!"; }
+    public String atacarLanzaLlamas() { 
+        return nombre + " uso Lanza Llamas!"; 
+    }
 }

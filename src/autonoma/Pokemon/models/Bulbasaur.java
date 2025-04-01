@@ -13,29 +13,29 @@ public class Bulbasaur extends Pokemon implements PokemonPlanta {
 
     @Override
     public String atacarPlacaje() {
-        return nombre + " usó Placaje!"; }
+        return nombre + " uso Placaje!"; }
 
     @Override
     public String atacarArañazo() {
-        return nombre + " usó Arañazo!"; }
+        return nombre + " uso Arañazo!"; }
 
     @Override
     public String atacarMordisco() { 
-        return nombre + " usó Mordisco!"; }
+        return nombre + " uso Mordisco!"; }
 
     @Override
     public String atacarParalizar() { 
-        return nombre + " usó Paralizar!"; }
+        return nombre + " uso Paralizar!"; }
 
     @Override
     public String atacarDrenaje() { 
-        return nombre + " usó Drenaje!"; }
+        return nombre + " uso Drenaje!"; }
 
     @Override
     public String atacarHojaAfilada() {
-        return nombre + " usó Hoja Afilada!"; }
+        return nombre + " uso Hoja Afilada!"; }
 
     @Override
     public String atacarLatigoCepa() {
-        return nombre + " usó Látigo Cepa!"; }
+        return nombre + " uso Látigo Cepa!"; }
 }

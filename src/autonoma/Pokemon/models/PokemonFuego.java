@@ -6,7 +6,7 @@ package autonoma.Pokemon.models;
  * @version 1.0
  */
 interface PokemonFuego {
-   public abstract void atacarPunioFuego();
-   public abstract void atacarAscuas();
-   public abstract void atacarLanzaLlamas();
+   public abstract String atacarPunioFuego();
+   public abstract String atacarAscuas();
+   public abstract String atacarLanzaLlamas();
 }
